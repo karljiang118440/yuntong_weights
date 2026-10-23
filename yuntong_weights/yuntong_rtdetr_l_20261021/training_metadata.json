@@ -1,0 +1,57 @@
+{
+  "model_id": "yuntong_rtdetr_l",
+  "version": "1.0.0-rc.1",
+  "status": "candidate_not_independently_validated",
+  "training_run": "yuntong_rtdetr_l_20261021",
+  "training_code_commit": "unknown",
+  "dataset_version": "unknown",
+  "class_mapping": "unknown",
+  "framework_version": "unknown",
+  "inference_verified": false,
+  "training_args": "args.yaml",
+  "training_results": "results.csv",
+  "last_logged_epoch": {
+    "epoch": "100",
+    "train/giou_loss": "0.46334",
+    "train/cls_loss": "0.41553",
+    "train/l1_loss": "0.03085",
+    "metrics/precision(B)": "0.87358",
+    "metrics/recall(B)": "0.78829",
+    "metrics/mAP50(B)": "0.86198",
+    "metrics/mAP50-95(B)": "0.56011",
+    "val/giou_loss": "0.45306",
+    "val/cls_loss": "0.57755",
+    "val/l1_loss": "0.03438",
+    "lr/pg0": "1.99e-06",
+    "lr/pg1": "1.99e-06",
+    "lr/pg2": "1.99e-06"
+  },
+  "highest_logged_map50_95_row": {
+    "epoch": "90",
+    "train/giou_loss": "0.50281",
+    "train/cls_loss": "0.42335",
+    "train/l1_loss": "0.0354",
+    "metrics/precision(B)": "0.86946",
+    "metrics/recall(B)": "0.78815",
+    "metrics/mAP50(B)": "0.85858",
+    "metrics/mAP50-95(B)": "0.56369",
+    "val/giou_loss": "0.46031",
+    "val/cls_loss": "0.57351",
+    "val/l1_loss": "0.03522",
+    "lr/pg0": "1.189e-05",
+    "lr/pg1": "1.189e-05",
+    "lr/pg2": "1.189e-05"
+  },
+  "weights": [
+    {
+      "path": "weights/best.pt",
+      "sha256": "cf4c088efc0e605f9b5e686d54e63a1c8ce73b1c8dd67257594345cfd3e0b944",
+      "bytes": 66141013
+    },
+    {
+      "path": "weights/last.pt",
+      "sha256": "7de766cf54460b3e52270497e4184e96499b298b361c537c4ccc3e0f1da69d14",
+      "bytes": 66141013
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+# === 忽略所有文件 ===
+*
+
+# === 但保留目录结构（允许空目录）===
+!*/
+
+# === 保留 Python 源码文件 ===
+!*.py
+!*.cpp
+!*.h
+
+# === 保留项目配置文件 ===
+!.gitignore
+!requirements.txt
+!setup.py
+!pyproject.toml
+!MANIFEST.in
+!Makefile
+!Dockerfile
+!.dockerignore
+
+
+# === 新增：保留脚本和配置语言文件 ===
+!*.sh
+!*.yaml
+!*.yml
+
+
+
+
+
+
+# === 保留文档文件 ===
+!README.md
+!PRD.md
+!README.rst
+!LICENSE
+!LICENSE.txt
+!CHANGELOG.md
+!CONTRIBUTING.md
+!AUTHORS
+
+# === tuoheng_algN image review deployment files ===
+!/thDSP/SAAS/tuoheng_algN/requirements_review.txt
+!/thDSP/SAAS/tuoheng_algN/requirements_qt_monitor.txt
+!/thDSP/SAAS/tuoheng_algN/service/nginx_review_service.conf.example
+
+# === 保留配置目录中的必要文件 ===
+!.github/
+!.github/**/*
+!.gitlab/
+!.gitlab/**/*
+!.vscode/
+!.vscode/**/*
+!.idea/
+!.idea/**/*
+
+# === 保留 CI/CD 配置 ===
+!.travis.yml
+!.gitlab-ci.yml
+!.github/workflows/
+!.github/workflows/**/*
+
+# === 排除所有非必要文件 ===
+
+# Python 缓存
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.cache
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+.env/
+*.venv
+
+# 测试和覆盖率
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.coveralls.yml
+*.cover
+*.test
+
+# 构建产物
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+*.so
+*.dll
+*.dylib
+
+# 日志和数据库
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# 媒体文件（图片、音视频等）
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.ico
+*.svg
+*.mp3
+*.mp4
+*.avi
+*.mov
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# IDE 和编辑器
+*.swp
+*.swo
+*~
+.DS_Store
+*.bak
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+*.part
+
+# === Yuntong model release allowlist 2026-10-23 ===
+!/.gitattributes
+!/模型权重版本管理与Release发布流程.md
+!/模型权重提交与Release获取记录.md
+!/yuntong_weights/yuntong_rtdetr_l_20261021/MODEL_CARD.md
+!/yuntong_weights/yuntong_rtdetr_l_20261021/RELEASE_NOTES.md
+!/yuntong_weights/yuntong_rtdetr_l_20261021/training_metadata.json
+!/yuntong_weights/yuntong_rtdetr_l_20261021/args.yaml
+!/yuntong_weights/yuntong_rtdetr_l_20261021/results.csv
+!/yuntong_weights/yuntong_rtdetr_l_20261021/confusion_matrix_normalized.png
+!/yuntong_weights/yuntong_rtdetr_l_20261021/confusion_matrix.png
+!/yuntong_weights/yuntong_rtdetr_l_20261021/F1_curve.png
+!/yuntong_weights/yuntong_rtdetr_l_20261021/P_curve.png
+!/yuntong_weights/yuntong_rtdetr_l_20261021/PR_curve.png
+!/yuntong_weights/yuntong_rtdetr_l_20261021/R_curve.png
+!/yuntong_weights/yuntong_rtdetr_l_20261021/results.png
+!/yuntong_weights/yuntong_rtdetr_l_20261021/weights/best.pt
+!/yuntong_weights/yuntong_rtdetr_l_20261021/weights/last.pt
+/dist/
+/.tools/
+/yuntong_weights/yuntong_rtdetr_l_20261021/weights/epoch*.pt
+*.filepart
